@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "one-cell-crew-mod",
+	"version": "${version}",
+	"name": "One Cell Crew Mod",
+	"description": "This is a mod made around a group of friends who together as a group become powerful",
+	"authors": [
+		"MysticNight233"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/one-cell-crew-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mysticnight.occmod.OneCellCrewMod"
+		],
+		"fabric-datagen": [
+			"net.mysticnight.occmod.OneCellCrewModDataGenerator"
+		],
+        "client": [
+          "net.mysticnight.occmod.OCCModClient"
+        ]
+	},
+	"mixins": [
+		"one-cell-crew-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
